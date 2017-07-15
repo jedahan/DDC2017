@@ -125,9 +125,36 @@ After looking at some of the countless ""new worlds"" games offer, the second ha
 - Course overview [here](https://github.com/antiboredom/automating-video) and software and tools used can be found [here](http://lav.io/2014/06/videogrep-automatic-supercuts-with-python/) 
 
 ### Understanding the Internet • by [Jonathan Dahan](http://jedahan.com/)
+
+#### Network Modelling
 - Through a series of embodied exercises students will replecate core components of the internet and the base structures that comprise it. This exercises is intended to provide a peek inside the black box, examine the history and decisions that were made in invention of the network and reimagine how it could have been constructed differently and what the possible outcomes could have been? 
 - Idea for this workshop is based on the previous work of Ingrid Burrington and Surya Mattu on their project [Networks Land](http://networks.land/)
+- Students formed groups and modeled 3 different networks
+  - one had facebook communicating to both a nintendo 3ds, and a phone with a bluetooth headset
+  - one was a phone communicating through two ISPs to make it to a website
+  - one 
+- From these networks, we talked about ownership and where it begins and ends,
+- How multiple radios may exist in a single node
+- The blurry lines between client and server
+- Net nuetrality, and where censorship or other threats can be effective
 
+#### Hacking Wifi
+- We then booted into Kali linux on all the macs
+- Then took a walk around the buildings, mapping local wifi networks
+- Next we used wifite to find weak wep networks, including one setup for the class called *totallysafe*
+- We started capturing ivs, and discussed what packets are, what ivs are, and why we need them
+- As some students got lots of ivs and were able to crack the password, they helped other students by generating more traffic
+- Some usb wifi devices didnt even see the ssid, so we highlighted that sometimes things don't work and its ok
+- Next, we showed ettercap, and explained man-in-the-middle attacks, arp-poisoning 2 computers
+- The hope was that we could sniff unencrypted images, using driftNet
+- It kinda worked, but everything was so slow, so we were able to talk about threat modelling
+- Also of note, wifite would show '0/1 attacks worked' in red, which felt like the key cracking didn't happen, but in fact the key was cracked. We highlighted both that the user interface and experience could be improved, and that the software is written by people, and may have mistakes. It can take a long time to be confident enough to even question 'is there an issue with the software/hardware/ux' when just beginning.
+
+#### Threat modelling
+- We discussed a holistic view of security, coming up with example scenarios that have different security requirements
+- One student suggested 'Use TOR and Signal', which provided a good opportunity to discuss how to prioritize efforts to be most effective - that there is no single magic way to be secure.
+- We referred back to the network models made earlier, to describe where threats may exist.
+- We discussed firewalls, censorship, and the pervasiveness of computers in everything (and a tiny note on PLCs)
 
 ## License
 
